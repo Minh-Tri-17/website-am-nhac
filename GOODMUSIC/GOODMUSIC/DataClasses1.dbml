@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLWedNhac" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ELITEBOOK2560P\SQLEXPRESS;Initial Catalog=QLWedNhac;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWedNhacConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BAI_HAT" Member="BAI_HATs">
+    <Type Name="BAI_HAT">
+      <Column Name="IDBH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDCS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENBH" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="THUTU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ANH" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="LINK" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CASI" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="CA_SI_BAI_HAT" Member="CA_SI" ThisKey="IDCS" OtherKey="IDCS" Type="CA_SI" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CA_SI" Member="CA_SIs">
+    <Type Name="CA_SI">
+      <Column Name="IDCS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="CA_SI_BAI_HAT" Member="BAI_HATs" ThisKey="IDCS" OtherKey="IDCS" Type="BAI_HAT" />
+      <Association Name="CA_SI_MV" Member="MVs" ThisKey="IDCS" OtherKey="IDCS" Type="MV" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAU_HINH" Member="CAU_HINHs">
+    <Type Name="CAU_HINH">
+      <Column Name="IDCH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GIATRI" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHU_DE" Member="CHU_DEs">
+    <Type Name="CHU_DE">
+      <Column Name="IDCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HINHCD" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="TENCD" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MV" Member="MVs">
+    <Type Name="MV">
+      <Column Name="IDMV" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDCS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENMV" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="THUTU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LINK" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ANH" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CASI" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="CA_SI_MV" Member="CA_SI" ThisKey="IDCS" OtherKey="IDCS" Type="CA_SI" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TOP_20" Member="TOP_20s">
+    <Type Name="TOP_20">
+      <Column Name="IDTOP" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HINHTOP" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="TENTOP" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

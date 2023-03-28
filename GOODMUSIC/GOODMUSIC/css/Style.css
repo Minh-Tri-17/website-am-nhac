@@ -1,0 +1,322 @@
+﻿body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: VnArabiaH;
+}
+*{
+    box-sizing:border-box;
+}
+/*-----------------------------HEADER--------------------------*/
+/*logo*/
+.logo {
+    margin-left: 125px;
+    margin-top: 15px;
+    float:left;
+    width: 210px
+}
+header {
+    background-color: #9900CC;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation-duration: 100s;
+}
+/*menu chuyển hướng*/
+ul {
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+    list-style-type: none;
+    overflow: hidden;
+    float:left;
+    padding: 7px 20px 7px 20px;
+}
+li{
+    display:inline-block;
+}
+    li a {
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        padding: 8px 8px;
+        text-decoration: none;
+    }
+        li a:hover {
+            background-color: lightpink;
+            color: #BFEFFF;
+        }
+/*thanh tìm kiếm*/
+input {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 5px 0px 5px 0px;
+    background-color: #CC99CC;
+}
+/*-----------------------------NAV------------------------------*/
+nav{
+    margin-top:30px;
+}
+.img{
+    margin-left:200px;
+}
+/*Slides ảnh*/
+.slides {
+    display: none;
+}
+
+.images {    
+    vertical-align: middle;
+    height: 300px;
+    width: 900px;    
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.numbertext {
+    position: absolute;
+    font-size: 20px;
+    padding: 8px 12px;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #6699FF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #CC66CC;
+    width: 35px;
+}
+/*-----------------------------ARTICLE--------------------------*/
+.clearfix::after{
+    display:table;
+    clear:both;
+    content:""
+}
+article{
+    margin-top: 70px;
+}
+/*thẻ đường link*/
+section a {
+    display: block;
+    color: black;
+    margin-left: 600px;
+    margin-right: 600px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #6600FF;
+    text-align: center;
+}
+    section a:hover {
+        color: #CC0099;
+        font-size: 35px;
+    }
+h2 {
+    color: black;
+    margin-left: 70px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #6600FF;
+    text-align: center;
+}
+/*ảnh chủ đề */
+.images-CD-left{
+    margin-left:250px;
+    width:35%;
+    margin-top:20px;
+}
+.images-CD-right {
+    margin-left:30px;
+    width: 35%;
+    margin-top: 20px;
+}
+/*ảnh stop 20*/
+.images-T-left {
+    margin-left:150px;
+    width: 20%;
+}
+.images-TTC{
+    width:20%;
+}
+.images-T {
+    margin-left: 350px;
+    width: 20%;    
+}
+.images-TTC-right {
+    
+    width: 20.72%;
+}
+/*ảnh mv*/
+.imagesMV{
+    width:30%;
+    margin-left:30px;
+    margin-top:15px;
+}
+/*ảnh bài hát*/
+.imagesBH{
+    width:12%;
+    float:left;
+    margin-right:20px;
+}
+/*Thanh Scroll*/
+.scroll {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;  
+}
+#scroll-CD {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+#scroll-CD1 {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+#scroll-CD2 {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+#scroll-CD3 {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+#scroll-T {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+
+#scroll-T1 {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+
+#scroll-T2 {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+
+#scroll-T3 {
+    border: 0px solid #CCCCCC;
+    padding: 10px 10px;
+    width: 700px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-left: 350px;
+    position: relative;
+    display: none;
+}
+.info {
+    font-size: 20px;
+    color: #FF0099;
+    display: block;
+    margin-right: 20px;
+}
+.border-list-nhac {
+    border-top: 1px solid #6699FF;
+    border-bottom: 1px solid #6699FF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 100px;
+    margin-left: 150px;
+}
+#border-list-nhac{
+    overflow-y:scroll;
+    border: 0px solid;
+    width:1000px;
+    height:400px;
+}
+.Admin {
+    color: #CC33CC;
+    font-size:25px;
+    float:left;
+    margin-right:8px;
+}
+.Admin_TD {
+    color: #CC33CC;
+    font-size: 42px;
+    margin-left: 400px;
+}
+/*-----------------------------FOOTER--------------------------*/
+footer {
+    background-color: #990099;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 4px 40px;
+}
+/*logo liên kết*/
+#logo-connect {
+    color: black;
+    position: relative;
+    font-size: 30px
+}
+a#logo-connect:hover {
+    color: #FF99FF
+}
+/*footer bên trái*/
+#ft-left {
+    display:inline;
+}
+/*footer bên phải*/
+#ft-right{
+    position:absolute;
+    top:10px;
+    right:60px;
+}

@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebMusic.master.cs" Inherits="GOODMUSIC.WebMusic" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Good Music - Music of life</title>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/Style.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <img class="logo" src="/images/logo1.png" alt="logo" />
+                <ul>
+                    <li><a href="/Use/TrangChu.aspx"><i class="fa fa-home" aria-hidden="true" style="float: left"></i>&nbsp;Trang chủ</a></li>
+                    <li><a href="/Use/NhacMoi.aspx"><i class="fa fa-music" aria-hidden="true" style="float: left"></i>&nbsp;Nhạc mới</a></li>
+                    <li><a href="/Use/ShowMv.aspx"><i class="fa fa-youtube-square" aria-hidden="true" style="float: left"></i>&nbsp;Mv mới</a></li>
+                    <li><a href="/Use/Top20.aspx"><i class="fa fa-rocket" aria-hidden="true" style="float: left"></i>&nbsp;Top 20</a></li>
+                    <li><a href="/Use/ChuDe.aspx"><i class="fa fa-sitemap" aria-hidden="true" style="float: left"></i>&nbsp;Chủ đề</a></li>
+                </ul>
+                <form>
+                    <input type="text" placeholder="Tìm kiếm" size="25" />
+                    <input type="submit" value="Tìm kiếm" size="25" />
+                </form>
+            </header>
+            <div class="clearfix"></div>
+            <marquee behavior="alternate" scrollamount="2" scr>
+                <marquee width="390" style="color: #6600FF; font-size: 30px" scrollamount="2">Chào mừng đến với good music</marquee>
+            </marquee>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <div id="ft-left">
+                    <p>Đây là trang wed nghe nhạc miễn phí</p>
+                    <p>Chủ trang web: Nhóm 8</p>
+                    <p>Bản quyền: Chưa được cấp</p>
+                    <a href="mailto:aimabiet123@gmail.com" style="text-decoration: none; color: black">
+                        <p>Gmail liên hệ: aimabiet123@gmail.com</p>
+                    </a>
+                </div>
+                <div id="ft-right">
+                    <a href="#" id="logo-connect"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#" id="logo-connect"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" id="logo-connect"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                    <a href="#" id="logo-connect"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" id="logo-connect"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div>
+            </footer>
+            <script src="/js/JavaScript.js" type="text/javascript" language="javascript"></script>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿var slideindex = 0;
+showslide();
+function showslide() {
+    var i;
+    //images
+    var slides = document.getElementsByClassName("slides");
+    //dot
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideindex++;
+    if (slideindex > slides.length) { slideindex = 1 }
+    //dot
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideindex - 1].style.display = "block";
+    //dot
+    dots[slideindex - 1].className += " active";
+    setTimeout(showslide, 3500);
+}
